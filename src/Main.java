@@ -71,7 +71,8 @@ public class Main {
 
         LinkedList<String> employees = new LinkedList<>();
 
-        System.out.println("\nPlease enter names of 10 Employees:");
+        System.out.println("\nTask 3:");
+        System.out.println("\nPlease enter names of 10 Employees:\n");
         for (int i = 0; i < 10; i++) {
             emp.name = sc.next();
             employees.add(emp.name);
