@@ -1,4 +1,4 @@
-package Polymorphism.MethodOverriding;
+package ObjectOrientedProgramming.Polymorphism.MethodOverriding;
 
 public class Parent {
     public void Eating(){

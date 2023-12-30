@@ -1,4 +1,4 @@
-package Encapsulation;
+package ObjectOrientedProgramming.Encapsulation;
 
 public class BankCustomer {
     private String Name;

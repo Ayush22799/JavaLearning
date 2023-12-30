@@ -1,4 +1,4 @@
-package CollectionsFramework.List;
+package CollectionsFramework.List.ArrayList;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,7 +6,7 @@ import java.util.List;
 
 public class arrayList {
     public void task1(){
-        System.out.println("TASK 1: \n");
+        System.out.println("\nTASK 1: \n");
         List<Integer> arr = new ArrayList<Integer>();
         for (int i = 5; i > 0; i--) {
             arr.add(i);

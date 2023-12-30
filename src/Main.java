@@ -1,19 +1,18 @@
-import Abstraction.SBIBank;
+import ObjectOrientedProgramming.Abstraction.SBIBank;
 import CollectionsFramework.List.LinkedList.Employee;
-import CollectionsFramework.List.arrayList;
-import Encapsulation.BankCustomer;
-import Inheritence.GermanShefard;
-import Polymorphism.MethodOverloading.Addition;
-import Polymorphism.MethodOverriding.Child;
-import Polymorphism.MethodOverriding.Parent;
+import CollectionsFramework.List.ArrayList.arrayList;
+import ObjectOrientedProgramming.Encapsulation.BankCustomer;
+import ObjectOrientedProgramming.Inheritence.GermanShefard;
+import ObjectOrientedProgramming.Polymorphism.MethodOverloading.Addition;
+import ObjectOrientedProgramming.Polymorphism.MethodOverriding.Child;
+import ObjectOrientedProgramming.Polymorphism.MethodOverriding.Parent;
 
 import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args){
-      /* Object Oriented Programming(OOPS) related tasks starts from here */
-
+      // Object Oriented Programming(OOPS) related tasks starts from here
     /*
     Task 1:
       Inheritance();
@@ -26,8 +25,6 @@ public class Main {
     /*
 
       /*Collection Framework related tasks starts from here */
-
-        //List:
         List();
 
     }
@@ -60,25 +57,31 @@ public class Main {
     }
 
     public static void List(){
-        //Task 1:
         arrayList arr = new arrayList();
+
+        //Task 1:
         arr.task1();
+        //Task 2:
         arr.task2();
 
-        //Task 2:
-        Scanner sc = new Scanner(System.in);
-        Employee emp = new Employee();
+        //Task 3:
+        System.out.println("\nTask 3: \n");
 
-        LinkedList<String> employees = new LinkedList<>();
+        List<Employee> list = new LinkedList<Employee>();
 
-        System.out.println("\nTask 3:");
-        System.out.println("\nPlease enter names of 10 Employees:\n");
-        for (int i = 0; i < 10; i++) {
-            emp.name = sc.next();
-            employees.add(emp.name);
+        Employee<String, Integer> e1 = new Employee<>("Ayush",24,28000,"ASE (Accenture)");
+        Employee<String, Integer> e2 = new Employee("Lokendra",23,75000,"Analyst (Cognizant)");
+        Employee<String, Integer> e3 = new Employee("Faizal",24,26000,"Trainee (Mindtree)");
+        Employee<String, Integer> e4 = new Employee("Praful",24,0,"Berozgar");
+
+        list.add(e1);
+        list.add(e2);
+        list.add(e3);
+        list.add(e4);
+
+        System.out.println("Names of Employees are:" );
+        for(Employee employee : list) {
+            System.out.println(employee.getName() + "");
         }
-
-        System.out.println("Name of Employees are: " + employees);
-
+        }
     }
-}
