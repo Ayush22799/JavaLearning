@@ -7,6 +7,7 @@ import ObjectOrientedProgramming.Polymorphism.MethodOverloading.Addition;
 import ObjectOrientedProgramming.Polymorphism.MethodOverriding.Child;
 import ObjectOrientedProgramming.Polymorphism.MethodOverriding.Parent;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -80,8 +81,27 @@ public class Main {
         list.add(e4);
 
         System.out.println("Names of Employees are:" );
-        for(Employee employee : list) {
-            System.out.println(employee.getName() + "");
+
+        Iterator<Employee> it = list.iterator();
+
+        while (it.hasNext()){
+            Employee emp = it.next();
+            System.out.println(emp.getName());
+        }
+
+        //Task 4:
+        System.out.println("\nTask 4: \n");
+
+        List<Integer> list1 = new LinkedList<>();
+
+        for (int i = 0; i < 5; i++) {
+            list1.add(i+1);
+        }
+
+        Iterator<Integer> integerIterator = list1.iterator();
+
+        while (integerIterator.hasNext()){
+            System.out.println(integerIterator.next());
         }
         }
     }
