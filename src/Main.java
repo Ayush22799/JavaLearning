@@ -1,4 +1,4 @@
-import CollectionsFramework.Map.Map;
+import CollectionsFramework.Map.LearnMap;
 import ObjectOrientedProgramming.Abstraction.SBIBank;
 import CollectionsFramework.List.ArrayList.arrayList;
 import ObjectOrientedProgramming.Encapsulation.BankCustomer;
@@ -25,7 +25,7 @@ public class Main {
       /*Collection Framework related tasks starts from here */
 
 //       List();
-        map();
+         map();
     }
 
     public static void Inheritance() {
@@ -76,9 +76,15 @@ public class Main {
 
     public static void map() {
 
-        Map map = new Map();
+        LearnMap map = new LearnMap();
 
         //Task 1
         map.Task1();
+
+        //Task 2
+        map.Task2();
+
+        //Task 3
+        map.Task3();
     }
 }
