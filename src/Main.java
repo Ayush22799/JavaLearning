@@ -1,5 +1,7 @@
 import CollectionsFramework.Map.LearnMap;
+import CollectionsFramework.Queue.LearnQueue;
 import CollectionsFramework.Set.LearnSet;
+import CollectionsFramework.Stack.LearnStack;
 import ObjectOrientedProgramming.Abstraction.SBIBank;
 import CollectionsFramework.List.ArrayList.arrayList;
 import ObjectOrientedProgramming.Encapsulation.BankCustomer;
@@ -10,24 +12,26 @@ import ObjectOrientedProgramming.Polymorphism.MethodOverriding.Parent;
 
 public class Main {
     public static void main(String[] args) {
-        /* Object Oriented Programming(OOPS) related tasks starts from here */
+//         System.out.println("\n Object Oriented Programming(OOPS) related tasks starts from here\n");
 
-        /*
-    Task 1:
-      Inheritance();
-    Task 2:
-      Encapsulation();
-    Task 3:
-      Abstraction();
-    Task 4:
-      Polymorphism();
-    /*
 
-      /*Collection Framework related tasks starts from here */
+//    Task 1:
+//      Inheritance();
+//    Task 2:
+//      Encapsulation();
+//    Task 3:
+//      Abstraction();
+//    Task 4:
+//      Polymorphism();
+
+
+      System.out.println("\n ---------------------Collection Framework related tasks starts from here-----------------------------\n");
 
 //       List();
 //       map();
-    set();
+       set();
+       stack();
+       queue();
     }
 
     public static void Inheritance() {
@@ -61,6 +65,8 @@ public class Main {
     }
 
     public static void List() {
+        System.out.println("---------- LIST RELATED TASKS STARTS FROM HERE ----------");
+
         arrayList arr = new arrayList();
 
         //Task 1:
@@ -77,6 +83,7 @@ public class Main {
     }
 
     public static void map() {
+        System.out.println("\n\n---------- MAP RELATED TASKS STARTS FROM HERE ----------");
 
         LearnMap map = new LearnMap();
 
@@ -91,11 +98,26 @@ public class Main {
     }
 
     public static void set(){
-        System.out.println("\n---------- SET RELATED TASKS STARTS FROM HERE ----------");
+        System.out.println("\n\n---------- SET RELATED TASKS STARTS FROM HERE ----------");
+
         LearnSet set = new LearnSet();
 
         set.Task1();
 
         set.Task2();
+    }
+    public static void stack(){
+        System.out.println("\n\n---------- STACK RELATED TASKS STARTS FROM HERE ----------");
+
+        LearnStack stack = new LearnStack();
+
+        stack.Task1();
+    }
+    public static void queue(){
+        System.out.println("\n\n---------- QUEUE RELATED TASKS STARTS FROM HERE ----------");
+
+        LearnQueue queue = new LearnQueue();
+
+        queue.Task1();
     }
 }
