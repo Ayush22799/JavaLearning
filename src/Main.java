@@ -1,4 +1,5 @@
 import CollectionsFramework.Map.LearnMap;
+import CollectionsFramework.Set.LearnSet;
 import ObjectOrientedProgramming.Abstraction.SBIBank;
 import CollectionsFramework.List.ArrayList.arrayList;
 import ObjectOrientedProgramming.Encapsulation.BankCustomer;
@@ -25,7 +26,8 @@ public class Main {
       /*Collection Framework related tasks starts from here */
 
 //       List();
-         map();
+//       map();
+    set();
     }
 
     public static void Inheritance() {
@@ -86,5 +88,14 @@ public class Main {
 
         //Task 3
         map.Task3();
+    }
+
+    public static void set(){
+        System.out.println("\n---------- SET RELATED TASKS STARTS FROM HERE ----------");
+        LearnSet set = new LearnSet();
+
+        set.Task1();
+
+        set.Task2();
     }
 }
