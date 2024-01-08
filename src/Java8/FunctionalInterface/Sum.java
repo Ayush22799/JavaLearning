@@ -1,4 +1,4 @@
-package Java8.LamdaExp;
+package Java8.FunctionalInterface;
 
 //Create a functional interface named Sum
 @FunctionalInterface
