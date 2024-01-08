@@ -15,6 +15,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -182,6 +183,31 @@ public class Main {
         //use foreach method to print linkedlist values .
         System.out.println("Using stream's forEach() function, Printing initial List: ");
         list.stream().forEach(x-> System.out.println(x));
+
+        System.out.println("\n--flatMap(): \n");
+
+        // create 2d linkedlist
+
+        List<String> bakeryList = new LinkedList();
+
+        bakeryList.add("pasta");
+        bakeryList.add("donut");
+
+        List<String> productList = new LinkedList();
+
+        productList.add("tomato");
+        productList.add("pepper");
+
+        List<List<String>> grocerylist = new LinkedList<>();
+
+        grocerylist.add(bakeryList);
+        grocerylist.add(productList);
+
+        System.out.println("Initially 2D list looks like: \n"+ grocerylist.toString());
+
+        List<String> lst = grocerylist.stream().flatMap(l -> l.stream()).collect(Collectors.toList());
+
+        System.out.println("\nAfter adding stream's flatMap() function, list looks like: \n"+ lst.toString());
     }
 
 }
