@@ -13,30 +13,24 @@ import ObjectOrientedProgramming.Polymorphism.MethodOverriding.Parent;
 
 public class Main {
     public static void main(String[] args) {
-//         System.out.println("\n Object Oriented Programming(OOPS) related tasks starts from here\n");
+        System.out.println("\n ---------------------Object Oriented Programming(OOPS) related tasks starts from here--------------------- \n");
 
-//    Task 1:
-//      Inheritance();
-//    Task 2:
-//      Encapsulation();
-//    Task 3:
-//      Abstraction();
-//    Task 4:
-//      Polymorphism();
+        Inheritance();
+        Encapsulation();
+        Abstraction();
+        Polymorphism();
 
-//        System.out.println("\n ---------------------Collection Framework related tasks starts from here-----------------------------\n");
+        System.out.println("\n ---------------------Collection Framework related tasks starts from here-----------------------------\n");
 
-//       List();
-//       map();
-//       set();
-//       stack();
-//       queue();
+        List();
+        map();
+        set();
+        stack();
+        queue();
 
         System.out.println("\n ---------------------JAVA 8 related tasks starts from here-----------------------------\n");
 
         java8();
-
-
     }
 
     public static void Inheritance() {
