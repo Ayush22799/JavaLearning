@@ -6,6 +6,7 @@ public class PracticePrograms {
     public static void main(String[] args) {
         List<String> courses = List.of("Spring", "Spring Boot", "API", "Microservices", "Test" ,"AWS", "PCF", "Azure", "Docker", "Kubernetes");
         List<Integer> numbers = List.of(12,9,13,4,6,2,4,12,53,15);
+
         /* Questions for filter function */
         System.out.println("___________ Filter Function _____________\n");
         System.out.println("1. Print odd Numbers: ");
