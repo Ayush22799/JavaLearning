@@ -1,6 +1,8 @@
 package Java8;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class PracticePrograms {
     public static void main(String[] args) {
@@ -40,6 +42,20 @@ public class PracticePrograms {
         sumOfCubes(numbers);
         System.out.println("\n4. Print the sum of odd numbers in list: ");
         sumOfOddNumbers(numbers);
+
+        /* Questions for Distinct and sorted function */
+        System.out.println("\n___________ Distinct & Sorted Function _____________");
+        System.out.println("\n1. Print the distinct(ignore duplicates) Numbers from list: ");
+        distinctNumbers(numbers);
+        System.out.println("\n2. Print the courses from list in decreasing order: ");
+        reverseSorted(courses);
+
+        /* Questions for Collect function */
+        System.out.println("\n___________ Collect Function _____________");
+        System.out.println("\n1. Print the list of even Numbers filtered from list: ");
+        listWithEvenNums(numbers);
+        System.out.println("\n2. Print the list of length of all course titles from list: ");
+        listOfCourseTitleSize(courses);
     }
 
     public static void printOddNumbers(List<Integer> list){
@@ -79,5 +95,17 @@ public class PracticePrograms {
     }
     public static void sumOfOddNumbers(List<Integer> numberList){
         System.out.println(numberList.stream().filter(a -> a % 2 !=0).reduce(0,Integer::sum));
+    }
+    public static void distinctNumbers(List<Integer> numberList){
+        System.out.println(numberList.stream().distinct().collect(Collectors.toList()));
+    }
+    public static void reverseSorted(List<String> courses){
+        courses.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+    }
+    public static void listWithEvenNums(List<Integer> numberList){
+        System.out.println(numberList.stream().filter(a->a%2==0).collect(Collectors.toList()));
+    }
+    public static void listOfCourseTitleSize(List<String> courses){
+        System.out.println(courses.stream().map(String::length).collect(Collectors.toList()));
     }
 }
