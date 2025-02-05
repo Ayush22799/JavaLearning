@@ -34,6 +34,12 @@ public class PracticePrograms {
         System.out.println("\n___________ Reduce Function _____________");
         System.out.println("\n1. Print the sum of total elements present in list: ");
         sumOfElementsInList(numbers);
+        System.out.println("\n2. Print the sum of squares of each number in list: ");
+        sumOfSquares(numbers);
+        System.out.println("\n3. Print the sum of cubes of each number in list: ");
+        sumOfCubes(numbers);
+        System.out.println("\n4. Print the sum of odd numbers in list: ");
+        sumOfOddNumbers(numbers);
     }
 
     public static void printOddNumbers(List<Integer> list){
@@ -64,5 +70,14 @@ public class PracticePrograms {
     }
     public static void sumOfElementsInList(List<Integer> numberList){
         System.out.println(numberList.stream().reduce(0, Integer::sum));
+    }
+    public static void sumOfSquares(List<Integer> numberList){
+        System.out.println(numberList.stream().map(a -> a * a).reduce(0,Integer::sum));
+    }
+    public static void sumOfCubes(List<Integer> numberList){
+        System.out.println(numberList.stream().map(a -> a * a * a).reduce(0,Integer::sum));
+    }
+    public static void sumOfOddNumbers(List<Integer> numberList){
+        System.out.println(numberList.stream().filter(a -> a % 2 !=0).reduce(0,Integer::sum));
     }
 }
